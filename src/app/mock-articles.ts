@@ -3,7 +3,7 @@ import {Article} from './article';
 export const ARTICLES: Article[] = [
     {
         id: 1,
-        title: "Pink Case",
+        title: "A Study in Pink",
         content: "",
         description: "First case with Sherlock Holmes. Give it a read :)",
         key: "my-first-article",
