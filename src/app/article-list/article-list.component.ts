@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../article';
 import { ArticleService } from '../article.service';
-import { ARTICLES } from '../mock-articles';
 
 @Component({
     selector: 'app-article-list',

@@ -14,4 +14,12 @@ export class ArticleService {
         const articles: Article[] = ARTICLES;
         return of(articles);
     }
+
+    getArticle(key: string): Observable<Article> {
+        const articles: Article[] = ARTICLES.filter((a) => {return a.key === key});
+
+        // console.log("inside articles service, getArticle(), articles ", articles, " key ", key);
+
+        return of(articles[0]);
+    }
 }
