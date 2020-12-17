@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleComponent } from './article/article.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 const routes: Routes = [
@@ -15,12 +16,20 @@ const routes: Routes = [
         component: AboutComponent
     },
     {
+        path: '404',
+        component: NotFoundComponent
+    },
+    {
         path: '',
         component: ArticleListComponent
     },
     {
         path: ':key',
         component: ArticleComponent
+    },
+    {
+        path: '**',
+        component: NotFoundComponent
     },
 ];
 
